@@ -227,6 +227,13 @@
   overflow: hidden;
 }
 
+.article-closing em,
+.article-closing span,
+.article-closing strong,
+.article-closing a {
+  color: var(--cream) !important;
+}
+
 .article-closing::before {
   content: '回回館';
   position: absolute;
