@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article — Hui Hui Gwan 回回館</title>
+  <meta name="description" content="Read full stories about the shared heritage of Islam and Korea — Hui Hui Gwan 回回館">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="article-styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation (simplified) -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-logo" id="nav-logo">
+        <div class="nav-logo-icon">回</div>
+        <div class="nav-logo-text">
+          Hui Hui Gwan
+          <span>회회관 · <span data-i18n="nav.subtitle">Islamic Korean Heritage</span></span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="index.html#about" data-i18n="nav.about">About</a>
+        <a href="index.html#history" data-i18n="nav.history">History</a>
+        <a href="articles.html" data-i18n="nav.stories" class="active">Stories</a>
+        <a href="index.html#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="index.html#products" data-i18n="nav.shop">Heritage Shop</a>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-switcher-btn" id="langBtn" aria-label="Change language">
+          <span class="lang-globe">🌐</span>
+          <span class="lang-current" id="langCurrent">EN</span>
+          <span class="lang-arrow">▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-option active" data-lang="en">
+            <span class="lang-flag">🇬🇧</span><span>English</span>
+          </button>
+          <button class="lang-option" data-lang="tr">
+            <span class="lang-flag">🇹🇷</span><span>Türkçe</span>
+          </button>
+          <button class="lang-option" data-lang="ko">
+            <span class="lang-flag">🇰🇷</span><span>한국어</span>
+          </button>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Article Content (populated by JS) -->
+  <main class="article-page" id="articlePage">
+    <!-- Hero image -->
+    <div class="article-hero" id="articleHero">
+      <img src="" alt="" id="articleHeroImg">
+      <div class="article-hero-gradient"></div>
+    </div>
+
+    <article class="article-container">
+      <div class="article-meta-top">
+        <a href="articles.html" class="article-back" id="articleBack">← <span data-i18n-static="back">All Stories</span></a>
+        <span class="article-category" id="articleCategory"></span>
+      </div>
+
+      <h1 class="article-title" id="articleTitle"></h1>
+
+      <div class="article-meta">
+        <div class="article-meta-item">
+          <span>📅</span>
+          <span id="articleDate"></span>
+        </div>
+        <div class="article-meta-item">
+          <span>⏱️</span>
+          <span id="articleReadTime"></span>
+        </div>
+      </div>
+
+      <div class="article-body" id="articleBody">
+        <!-- Article content injected here -->
+      </div>
+
+      <!-- Related articles -->
+      <div class="article-related" id="articleRelated">
+        <h3 id="relatedTitle">Continue Reading</h3>
+        <div class="article-related-grid" id="relatedGrid">
+          <!-- Related article cards injected here -->
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- Footer (simplified) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <p data-i18n="footer.copyright">© 2026 Hui Hui Gwan 回回館 — All rights reserved</p>
+        <p class="sadaqa">صدقة جارية — 사다까 자리야</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="translations.js"></script>
+  <script src="article-1-goryeo-merchants.js"></script>
+  <script src="article-2-soju-arabic-roots.js"></script>
+  <script src="article-3-jang-sun-ryong.js"></script>
+  <script src="article-4-ssanghwajeom.js"></script>
+  <script src="article-5-muslim-scholars.js"></script>
+  <script src="article-6-quiet-disappearance.js"></script>
+  <script src="articles-data.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // ─── i18n ─────────────────────────────────────────────────
+      const LANG_LABELS = { en: 'EN', tr: 'TR', ko: '한' };
+      const langSwitcher = document.getElementById('langSwitcher');
+      const langBtn = document.getElementById('langBtn');
+      const langCurrent = document.getElementById('langCurrent');
+      const langOptions = document.querySelectorAll('.lang-option');
+      let currentLang = localStorage.getItem('hhg-lang') || 'en';
+
+      langBtn.addEventListener('click', (e) => { e.stopPropagation(); langSwitcher.classList.toggle('open'); });
+      document.addEventListener('click', (e) => { if (!langSwitcher.contains(e.target)) langSwitcher.classList.remove('open'); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') langSwitcher.classList.remove('open'); });
+
+      langOptions.forEach(opt => {
+        opt.addEventListener('click', () => {
+          const lang = opt.dataset.lang;
+          if (lang !== currentLang) setLanguage(lang, true);
+          langSwitcher.classList.remove('open');
+        });
+      });
+
+      function setLanguage(lang, animate) {
+        currentLang = lang;
+        localStorage.setItem('hhg-lang', lang);
+        document.documentElement.lang = lang;
+        langCurrent.textContent = LANG_LABELS[lang];
+        langOptions.forEach(o => o.classList.toggle('active', o.dataset.lang === lang));
+
+        // Translate nav elements
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (TRANSLATIONS[key]) {
+            el.textContent = TRANSLATIONS[key][lang] || TRANSLATIONS[key]['en'];
+          }
+        });
+
+        renderArticle(animate);
+      }
+
+      // ─── Get article from URL ────────────────────────────────
+      const params = new URLSearchParams(window.location.search);
+      const articleId = params.get('id');
+
+      function renderArticle(animate) {
+        const article = ARTICLES.find(a => a.id === articleId);
+        if (!article) {
+          document.getElementById('articlePage').innerHTML = `
+            <div style="text-align:center;padding:12rem 2rem 6rem;color:var(--text-secondary);">
+              <h1 style="font-size:3rem;margin-bottom:1rem;">404</h1>
+              <p>Article not found.</p>
+              <a href="articles.html" class="btn btn-primary" style="margin-top:2rem;">← All Articles</a>
+            </div>`;
+          return;
+        }
+
+        const lang = currentLang;
+
+        document.title = article.title[lang] + ' — Hui Hui Gwan 回回館';
+        document.getElementById('articleHeroImg').src = article.image;
+        document.getElementById('articleHeroImg').alt = article.title[lang];
+        document.getElementById('articleCategory').textContent = article.category[lang];
+        document.getElementById('articleTitle').textContent = article.title[lang];
+        document.getElementById('articleDate').textContent = new Date(article.date).toLocaleDateString(
+          lang === 'ko' ? 'ko-KR' : lang === 'tr' ? 'tr-TR' : 'en-US',
+          { year: 'numeric', month: 'long', day: 'numeric' }
+        );
+        document.getElementById('articleReadTime').textContent = article.readTime[lang];
+
+        const body = document.getElementById('articleBody');
+        if (animate) {
+          body.style.opacity = '0';
+          setTimeout(() => {
+            body.innerHTML = article.body[lang];
+            body.style.opacity = '1';
+          }, 200);
+        } else {
+          body.innerHTML = article.body[lang];
+        }
+
+        // Related articles
+        const related = ARTICLES.filter(a => a.id !== articleId).slice(0, 2);
+        const relatedLabels = { en: 'Continue Reading', tr: 'Okumaya Devam Et', ko: '계속 읽기' };
+        const readMoreLabels = { en: 'Read →', tr: 'Oku →', ko: '읽기 →' };
+        document.getElementById('relatedTitle').textContent = relatedLabels[lang];
+
+        document.getElementById('relatedGrid').innerHTML = related.map(r => `
+          <a href="article.html?id=${r.id}" class="related-card">
+            <div class="related-card-img">
+              <img src="${r.image}" alt="${r.title[lang]}">
+            </div>
+            <div class="related-card-body">
+              <span class="related-card-category">${r.category[lang]}</span>
+              <h4>${r.title[lang]}</h4>
+              <span class="related-card-link">${readMoreLabels[lang]}</span>
+            </div>
+          </a>
+        `).join('');
+
+        // Back link
+        const backLabels = { en: '← All Stories', tr: '← Tüm Yazılar', ko: '← 모든 이야기' };
+        document.getElementById('articleBack').innerHTML = backLabels[lang];
+      }
+
+      setLanguage(currentLang, false);
+
+      // ─── Mobile nav ──────────────────────────────────────────
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        const spans = navToggle.querySelectorAll('span');
+        if (navLinks.classList.contains('open')) {
+          spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+          spans[1].style.opacity = '0';
+          spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+        } else {
+          spans[0].style.transform = 'none';
+          spans[1].style.opacity = '1';
+          spans[2].style.transform = 'none';
+        }
+      });
+
+      // ─── Back to top ─────────────────────────────────────────
+      const backToTop = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+      }, { passive: true });
+      backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    });
+  </script>
+</body>
+</html>
