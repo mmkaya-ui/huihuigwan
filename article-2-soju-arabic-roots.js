@@ -1,169 +1,241 @@
 /**
- * Article 2: Korea's Most Famous Drink Has Arabic Roots
+ * Article 2: When Muslim Astronomers Helped Map the Korean Sky
  */
 const ARTICLE_2 = {
-  id: "soju-arabic-roots",
+  id: "muslim-astronomers-korean-sky",
   image: "images/seoul-mosque.png",
-  category: { en: "Culture", tr: "Kültür", ko: "문화" },
+  category: { en: "Science & Heritage", tr: "Bilim ve Miras", ko: "과학과 유산" },
   date: "2026-04-18",
-  readTime: { en: "8 min read", tr: "8 dk okuma", ko: "8분 읽기" },
+  readTime: { en: "10 min read", tr: "10 dk okuma", ko: "10분 읽기" },
   featured: false,
   title: {
-    en: "Did You Know? Korea's Most Famous Drink Has Arabic Roots",
-    tr: "Biliyor muydunuz? Kore'nin En Ünlü İçeceğinin Arapça Kökleri Var",
-    ko: "알고 계셨나요? 한국에서 가장 유명한 음료에는 아랍의 뿌리가 있습니다"
+    en: "When Muslim Astronomers Helped Map the Korean Sky",
+    tr: "Müslüman Gökbilimciler Kore Gökyüzünün Haritasını Çıkarmaya Nasıl Yardım Etti",
+    ko: "무슬림 천문학자들이 한국의 하늘을 그리는 데 기여하다"
   },
   excerpt: {
-    en: "The distillation technique behind Korea's beloved soju traces back to Middle Eastern arak, brought to the peninsula through Mongol channels during the 13th century.",
-    tr: "Kore'nin sevilen içeceği soju'nun arkasındaki damıtma tekniği, 13. yüzyılda Moğol kanallarıyla yarımadaya getirilen Ortadoğu kökenli arak'a dayanır.",
-    ko: "한국인이 사랑하는 소주 뒤에 있는 증류 기술은 13세기 몽골 경로를 통해 한반도에 전해진 중동의 아라크에 그 기원을 두고 있습니다."
+    en: "King Sejong's greatest scientific achievement — the Chiljeongsan — was built on Islamic astronomical tables. The story of how Muslim star charts shaped Korean science for centuries.",
+    tr: "Kral Sejong'un en büyük bilimsel başarısı — Chiljeongsan — İslami astronomi tablolarına dayanıyordu. Müslüman yıldız haritalarının Kore bilimini yüzyıllarca nasıl şekillendirdiğinin hikayesi.",
+    ko: "세종대왕의 가장 위대한 과학적 업적 — 칠정산 — 은 이슬람 천문표를 기반으로 만들어졌습니다. 무슬림 성도가 수세기 동안 한국 과학을 어떻게 형성했는지의 이야기."
   },
   body: {
-    en: `<h2>The Drink That Connects Two Worlds</h2>
+    en: `<h2>A King Who Looked at the Stars</h2>
 
-<p>If you've ever sat at a Korean table — a <em>samgyeopsal</em> dinner, a late-night <em>chimaek</em> gathering, or a family celebration — chances are you've seen a small green bottle. Soju (소주, 燒酒). Korea's national drink. Consumed more than any other spirit on Earth.</p>
+<p>When we think of King Sejong the Great (세종대왕, r. 1418–1450), most people think of <em>Hangul</em> — the Korean alphabet. And rightly so. But Sejong was far more than a linguist. He was a scientist-king who believed that understanding the heavens was essential to governing the earth.</p>
 
-<p>But here's something most people don't know: the very technology that makes soju possible — distillation — did not originate in Korea. It came from the Muslim world. And the word that reveals this connection is still alive today.</p>
+<p>Under his reign, Korea experienced what historians call its <strong>Golden Age of Science</strong>. New instruments were built, new calendars calculated, and new star charts drawn. But here is the part most people never hear: some of the most important knowledge behind these achievements came from the Muslim world.</p>
 
-<h2>The Word That Cannot Be Forgotten: <em>Arak-ju</em></h2>
+<h2>The Problem: Borrowed Calendars Don't Fit Korean Skies</h2>
 
-<p>In the area around <strong>Kaesong</strong> (개성) — the old capital of the Goryeo Dynasty — soju has a different name. The locals call it <em>arak-ju</em> (아락주). This is not a coincidence. The word <em>arak</em> (عرق) is Arabic, referring to the anise-flavored distilled spirit that has been produced in the Levant, Iraq, and Iran for centuries.</p>
+<p>For centuries, Korea relied on Chinese astronomical calendars — systems designed for the latitude of Beijing or Nanjing, not Seoul. This meant that eclipse predictions, seasonal calculations, and planetary positions were often slightly wrong for Korean observers.</p>
 
-<p>The linguistic chain is direct and unmistakable:</p>
+<p>Sejong wanted something better. He wanted a calendar system <strong>calibrated specifically for the Korean peninsula</strong> — one that could predict celestial events with precision from the latitude of Hanyang (한양, modern Seoul). To achieve this, his court astronomers needed the best astronomical knowledge available in the world.</p>
 
-<ul>
-<li><strong>Arabic:</strong> عرق (<em>arak</em>) — "sweat" or "distilled essence"</li>
-<li><strong>Mongolian:</strong> <em>arkhi</em> — distilled spirit</li>
-<li><strong>Korean:</strong> 아락주 (<em>arak-ju</em>) — the old Kaesong name for soju</li>
-</ul>
+<p>And the best astronomical knowledge in the world, at that time, had deep Islamic roots.</p>
 
-<p>This linguistic fingerprint is one of the most remarkable surviving traces of the Islamic world's influence on Korean culture.</p>
+<h2>The Huihui Calendar: An Islamic Gift to East Asia</h2>
 
-<h2>How Did It Get There? The Mongol Connection</h2>
+<p>During the Mongol-Yuan dynasty (1271–1368), the empire's rulers brought Muslim astronomers from Persia, Central Asia, and the Arab world to their capital in Khanbaliq (modern Beijing). These scholars — known in Chinese sources as <strong>Huihui (回回)</strong>, the same term used for Muslims in Korea — were tasked with improving the accuracy of astronomical calculations.</p>
 
-<p>During the 13th century, the Mongol Empire swept across much of Eurasia. In their conquests of the Middle East and Persia (1219–1260), the Mongols encountered and adopted the distillation techniques used by Muslim populations to produce arak and other spirits.</p>
+<p>The result was the <strong><em>Huihui Lifa</em></strong> (回回曆法, "Muslim Calendar System") — a set of astronomical tables based on Islamic <em>zij</em> traditions. These tables incorporated centuries of observations and mathematical methods from the great Islamic observatories of Samarkand, Maragha, and Baghdad.</p>
 
-<p>When the Mongols occupied Korea (the Goryeo Dynasty, 1231–1259), they established military bases and supply lines across the peninsula — most notably at <strong>Andong</strong> (안동) and <strong>Kaesong</strong> (개성). At these sites, they set up distilleries using the methods they had learned from Muslim craftsmen.</p>
-
-<blockquote>"The absence of distilled spirits in early Goryeo literature, and their sudden appearance in the 13th century, suggests that the technology arrived during the period of Mongol influence." — Historical analysis from Korean alcohol studies</blockquote>
-
-<h2>From Baghdad to Andong: A Thousand-Year Journey</h2>
-
-<p>The journey of distillation technology is a beautiful story of human connection across vast distances:</p>
-
-<ol>
-<li><strong>8th–10th century:</strong> Muslim alchemists in the Abbasid Caliphate refine distillation techniques, producing arak and medicinal spirits.</li>
-<li><strong>13th century:</strong> Mongol forces encounter these techniques during their conquests of the Islamic world.</li>
-<li><strong>1231–1270s:</strong> Mongol armies bring distillation to the Korean Peninsula, establishing production centers at Andong, Kaesong, and Jeju.</li>
-<li><strong>14th century onward:</strong> The technique becomes deeply embedded in Korean culture, evolving into the soju we know today.</li>
-</ol>
-
-<p>Today, <strong>Andong soju</strong> (안동소주) is recognized as one of the purest descendants of this original tradition. It is still made using traditional distillation methods — the same fundamental process that Muslim alchemists perfected over a thousand years ago in Baghdad and Damascus.</p>
-
-<h2>More Than a Drink — A Living Heritage</h2>
-
-<p>Every time a Korean pours soju into a small glass, they are, without knowing it, continuing a tradition that began in the Muslim world. The technology, the word, and the spirit itself are living proof that Islam and Korea share a connection far older and deeper than most people imagine.</p>
-
-<p>In the green bottle lies a story — a story of Muslim alchemists, Mongol horsemen, and Korean craftsmen, all linked across centuries by a simple, powerful act: transforming something ordinary into something refined.</p>
-
-<p class="article-closing"><em>The next time you see a bottle of soju, remember: the hands that first perfected this art were the hands of Muslim scholars in Baghdad. And the word that carries this memory — arak — is still spoken in the streets of Kaesong, a thousand years later.</em></p>`,
-
-    tr: `<h2>İki Dünyayı Birleştiren İçecek</h2>
-
-<p>Eğer bir Kore sofrasına oturmuşsanız — bir <em>samgyeopsal</em> yemeği, gece vakti bir <em>chimaek</em> buluşması ya da bir aile kutlaması — muhtemelen küçük yeşil bir şişe görmüşsünüzdür. Soju (소주, 燒酒). Kore'nin ulusal içeceği. Dünyada en çok tüketilen distile içki.</p>
-
-<p>Ancak çoğu insanın bilmediği bir şey var: soju'yu mümkün kılan teknoloji — damıtma — Kore'de ortaya çıkmadı. Müslüman dünyasından geldi. Ve bu bağı ortaya koyan kelime bugün hâlâ yaşıyor.</p>
-
-<h2>Unutulamayan Kelime: <em>Arak-ju</em></h2>
-
-<p><strong>Kaesong</strong> (개성) çevresinde — Goryeo Hanedanlığı'nın eski başkenti — soju'nun farklı bir adı vardır. Yöre halkı ona <em>arak-ju</em> (아락주) der. Bu bir tesadüf değildir. <em>Arak</em> (عرق) kelimesi Arapçadır ve yüzyıllardır Levant, Irak ve İran'da üretilen anason aromalı damıtık içkiyi ifade eder.</p>
-
-<p>Dilbilimsel zincir doğrudan ve açıktır:</p>
+<p>The <em>Huihui Lifa</em> was remarkable for several reasons:</p>
 
 <ul>
-<li><strong>Arapça:</strong> عرق (<em>arak</em>) — "ter" veya "damıtılmış öz"</li>
-<li><strong>Moğolca:</strong> <em>arkhi</em> — damıtık içki</li>
-<li><strong>Korece:</strong> 아락주 (<em>arak-ju</em>) — soju'nun eski Kaesong adı</li>
+<li><strong>Superior planetary models:</strong> Islamic astronomers had developed more accurate methods for calculating the positions of the five visible planets (Mercury, Venus, Mars, Jupiter, Saturn) and predicting their movements.</li>
+<li><strong>Eclipse prediction:</strong> The Islamic tables offered more precise methods for predicting solar and lunar eclipses — events of enormous political and spiritual significance in East Asian courts.</li>
+<li><strong>Trigonometric foundations:</strong> Islamic mathematics, particularly spherical trigonometry, provided tools that Chinese-based systems lacked.</li>
 </ul>
 
-<p>Bu dilbilimsel parmak izi, İslam dünyasının Kore kültürü üzerindeki etkisinin günümüze ulaşan en dikkat çekici izlerinden biridir.</p>
+<p>This system was officially maintained alongside the Chinese <em>Shoushi</em> calendar in the Yuan court. And when Korean astronomers traveled to Beijing to study, they encountered — and were deeply impressed by — the Islamic tables.</p>
 
-<h2>Oraya Nasıl Ulaştı? Moğol Bağlantısı</h2>
+<h2>Chiljeongsan: Korea's Masterpiece, Built on Two Traditions</h2>
 
-<p>13. yüzyılda Moğol İmparatorluğu Avrasya'nın büyük bir bölümünü kapladı. Ortadoğu ve İran'ın fethinde (1219–1260), Moğollar Müslüman toplulukların arak ve diğer içkileri üretmek için kullandığı damıtma tekniklerini keşfettiler ve benimsediler.</p>
+<p>Sejong commissioned his finest scholars — including <strong>Yi Sun-ji</strong> (이순지) and <strong>Kim Dam</strong> (김담) — to create a uniquely Korean astronomical system. The result, completed around <strong>1444</strong>, was the <strong><em>Chiljeongsan</em></strong> (칠정산, "Calculations of the Seven Luminaries").</p>
 
-<p>Moğollar Kore'yi (Goryeo Hanedanlığı, 1231–1259) işgal ettiğinde, yarımada genelinde — özellikle <strong>Andong</strong> (안동) ve <strong>Kaesong</strong>'da (개성) — askeri üsler ve ikmal hatları kurdular. Bu merkezlerde, Müslüman zanaatkârlardan öğrendikleri yöntemlerle damıtma tesisleri kurdular.</p>
-
-<blockquote>"Erken dönem Goryeo edebiyatında damıtık içkilerin yokluğu ve 13. yüzyılda aniden ortaya çıkışları, bu teknolojinin Moğol etkisi döneminde geldiğini düşündürmektedir." — Kore alkol çalışmalarından tarihî analiz</blockquote>
-
-<h2>Bağdat'tan Andong'a: Bin Yıllık Bir Yolculuk</h2>
-
-<p>Damıtma teknolojisinin yolculuğu, engin mesafeler boyunca insan bağlantısının güzel bir hikâyesidir:</p>
-
-<ol>
-<li><strong>8.–10. yüzyıl:</strong> Abbasî Hilafeti'ndeki Müslüman simyacılar damıtma tekniklerini geliştirir, arak ve tıbbi içecekler üretir.</li>
-<li><strong>13. yüzyıl:</strong> Moğol kuvvetleri, İslam dünyasının fethi sırasında bu teknikleri keşfeder.</li>
-<li><strong>1231–1270'ler:</strong> Moğol orduları damıtma tekniğini Kore Yarımadası'na getirir, Andong, Kaesong ve Jeju'da üretim merkezleri kurar.</li>
-<li><strong>14. yüzyıl ve sonrası:</strong> Teknik Kore kültürüne derinlemesine işler ve bugün bildiğimiz soju'ya dönüşür.</li>
-</ol>
-
-<p>Bugün <strong>Andong soju</strong> (안동소주), bu orijinal geleneğin en saf temsilcilerinden biri olarak kabul edilir. Hâlâ geleneksel damıtma yöntemleriyle üretilmektedir — bin yıl önce Bağdat ve Şam'da Müslüman simyacıların mükemmelleştirdiği aynı temel süreç.</p>
-
-<h2>Bir İçecekten Fazlası — Yaşayan Bir Miras</h2>
-
-<p>Bir Koreli her soju doldurduğunda, farkında olmadan Müslüman dünyasında başlayan bir geleneği sürdürüyor. Teknoloji, kelime ve içkinin kendisi, İslam ile Kore'nin çoğu insanın hayal ettiğinden çok daha eski ve derin bir bağ paylaştığının yaşayan kanıtıdır.</p>
-
-<p>Yeşil şişenin içinde bir hikâye yatıyor — Müslüman simyacıların, Moğol atlılarının ve Koreli ustaların, basit ama güçlü bir eylemle yüzyıllar boyunca birbirine bağlanan hikâyesi: sıradan bir şeyi, rafine bir şeye dönüştürmek.</p>
-
-<p class="article-closing"><em>Bir dahaki sefere bir soju şişesi gördüğünüzde hatırlayın: bu sanatı ilk mükemmelleştiren eller, Bağdat'taki Müslüman âlimlerin elleriydi. Ve bu hatırayı taşıyan kelime — arak — bin yıl sonra hâlâ Kaesong sokaklarında söyleniyor.</em></p>`,
-
-    ko: `<h2>두 세계를 잇는 음료</h2>
-
-<p>한국식 식탁에 앉아 본 적이 있다면 — 삼겹살 저녁, 밤늦은 치맥 모임, 가족 모임 등 — 아마 작은 초록색 병을 본 적이 있을 것입니다. 소주(소주, 燒酒). 한국의 국민 음료. 세계에서 가장 많이 소비되는 증류주.</p>
-
-<p>하지만 대부분의 사람이 모르는 것이 있습니다: 소주를 가능하게 하는 바로 그 기술 — 증류 — 은 한국에서 시작되지 않았습니다. 무슬림 세계에서 왔습니다. 그리고 이 연결을 드러내는 단어는 현재까지도 살아 있습니다.</p>
-
-<h2>잊힐 수 없는 단어: <em>아락주</em></h2>
-
-<p>고려 왕조의 옛 수도 <strong>개성</strong>(개성) 주변에서 소주는 다른 이름을 가지고 있습니다. 주민들은 그것을 <em>아락주</em>(아락주)라고 부릅니다. 이것은 우연이 아닙니다. <em>아라크</em>(عرق)는 아랍어이고, 수백 년간 레반트, 이라크, 이란에서 제조되어 온 아니스향 증류주를 가리킵니다.</p>
-
-<p>언어적 연결 고리는 직접적이고 분명합니다:</p>
+<p>The <em>Chiljeongsan</em> was groundbreaking because it consisted of <strong>two parts</strong>:</p>
 
 <ul>
-<li><strong>아랍어:</strong> عرق (<em>아라크</em>) — "땀" 혹은 "증류된 정수"</li>
-<li><strong>몽골어:</strong> <em>아르히</em> — 증류주</li>
-<li><strong>한국어:</strong> 아락주 (<em>아락주</em>) — 소주의 개성 옛 이름</li>
+<li><strong><em>Naepyeon</em></strong> (내편, "Inner Section"): Based on the Chinese <em>Shoushi</em> (授時) calendar, adapted for the latitude of Seoul.</li>
+<li><strong><em>Oepyeon</em></strong> (외편, "Outer Section"): Based directly on the <strong><em>Huihui Lifa</em></strong> — the Islamic astronomical tables.</li>
 </ul>
 
-<p>이 언어적 지문은 이슬람 세계가 한국 문화에 미친 영향의 가장 놀라운 현존 흔적 중 하나입니다.</p>
+<blockquote>The Outer Section of the Chiljeongsan drew upon Islamic computational methods to calculate the movements of the sun, moon, and five planets with a precision that Chinese-based systems alone could not achieve.</blockquote>
 
-<h2>어떻게 전해졌을까? 몽골 연결 고리</h2>
+<p>This was not a minor footnote. The Islamic-based <em>Oepyeon</em> was considered essential — a <strong>complementary system</strong> that provided checks, corrections, and alternative calculations that improved the overall accuracy of Korean astronomy.</p>
 
-<p>13세기에 몽골 제국은 유라시아 대부분을 정복했습니다. 중동과 페르시아 정복(1219–1260) 과정에서 몽골인은 무슬림 주민들이 아라크와 다른 술을 만드는 데 사용하던 증류 기술을 발견하고 채택했습니다.</p>
+<h2>What the Muslim Astronomers Contributed</h2>
 
-<p>몽골이 한국(고려 왕조, 1231–1259)을 점령했을 때, 한반도 전역에 군사 기지와 보급선을 구축했습니다 — 특히 <strong>안동</strong>(안동)과 <strong>개성</strong>(개성)에. 이 거점들에서 무슬림 장인에게서 배운 방법으로 증류소를 설치했습니다.</p>
+<p>The Islamic astronomical tradition that reached Korea through the <em>Huihui Lifa</em> carried within it centuries of accumulated knowledge:</p>
 
-<blockquote>"초기 고려 문헌에서 증류주의 부재와 13세기에 갑자기 등장한 것은 이 기술이 몽골 영향 시기에 전해졌음을 시사한다." — 한국 주류 연구의 역사적 분석</blockquote>
+<ul>
+<li><strong>Astronomy:</strong> Islamic astronomical instruments and observational methods, refined at the great observatories of Maragha (1259) and Samarkand (1420), provided more precise measurements of planetary positions and stellar coordinates.</li>
+<li><strong>Mathematics:</strong> The development of spherical trigonometry by Muslim mathematicians enabled more accurate calculations of celestial positions from different latitudes — the exact problem Sejong was trying to solve.</li>
+<li><strong>Calendar Science:</strong> Islamic <em>zij</em> tables, compiled over centuries of careful observation, offered a wealth of empirical data that enriched Korean astronomical knowledge.</li>
+</ul>
 
-<h2>바그다드에서 안동까지: 천 년의 여정</h2>
+<p>The instruments built during Sejong's reign — including the <strong><em>Honcheonui</em></strong> (혼천의, armillary sphere), the <strong><em>Honsang</em></strong> (혼상, celestial globe), and the <strong><em>Angbu Ilgu</em></strong> (앙부일구, hemispherical sundial) — reflected this synthesis of East Asian and Islamic astronomical traditions.</p>
 
-<p>증류 기술의 여정은 광대한 거리를 건넌 인간 연결의 아름다운 이야기입니다:</p>
+<h2>A Legacy That Lasted Centuries</h2>
 
-<ol>
-<li><strong>8~10세기:</strong> 아바스 칼리파국의 무슬림 연금술사들이 증류 기술을 발전시켜 아라크와 약용 증류주를 제조했습니다.</li>
-<li><strong>13세기:</strong> 몽골군이 이슬람 세계 정복 과정에서 이 기술을 발견했습니다.</li>
-<li><strong>1231~1270년대:</strong> 몽골군이 증류 기술을 한반도에 가져와 안동, 개성, 제주에 제조 거점을 설치했습니다.</li>
-<li><strong>14세기 이후:</strong> 이 기술은 한국 문화에 깊이 뿌리를 내리고 오늘날 우리가 아는 소주로 발전했습니다.</li>
-</ol>
+<p>The influence of Islamic astronomy in Korea did not end with Sejong. The <em>Huihui Lifa</em>-based calculations continued to be used and referenced by Korean astronomers well into the <strong>18th and early 19th centuries</strong> — a remarkable span of over 400 years.</p>
 
-<p>현재 <strong>안동소주</strong>(안동소주)는 이 원래 전통의 가장 순수한 후손 중 하나로 인정받고 있습니다. 여전히 전통 증류 방법으로 제조되고 있습니다 — 천 년 전 바그다드와 다마스쿠스에서 무슬림 연금술사들이 완성한 바로 그 근본적인 공정입니다.</p>
+<p>Korean court astronomers routinely cross-checked their predictions using both the Chinese-derived and Islamic-derived systems. When the two systems produced different results, it often led to deeper investigation and improved understanding — a testament to the value of integrating diverse scientific traditions.</p>
 
-<h2>음료 그 이상 — 살아있는 유산</h2>
+<h2>Hidden in Plain Sight</h2>
 
-<p>한국인이 소주잔을 따를 때마다, 그들은 알지 못한 채 무슬림 세계에서 시작된 전통을 이어가고 있습니다. 기술, 단어, 그리고 술 자체는 이슬람과 한국이 대부분의 사람이 상상하는 것보다 훨씬 오래되고 깊은 인연을 공유하고 있다는 살아있는 증거입니다.</p>
+<p>Today, the <em>Chiljeongsan</em> is celebrated as one of the greatest achievements of Korean science. It is a point of national pride. But the Islamic contribution to its creation is rarely mentioned — not out of malice, but simply because the connection has faded from public memory.</p>
 
-<p>초록색 병 안에는 한 이야기가 있습니다 — 무슬림 연금술사, 몽골 기마병, 한국 장인들이 수백 년에 걸쳐 단순하고 강력한 하나의 행위로 연결되는 이야기: 평범한 것을 고귀한 것으로 바꾸는 것.</p>
+<p>Yet the evidence is clear and well-documented. Korean historians and astronomers have long acknowledged the debt that the <em>Chiljeongsan</em> owes to the <em>Huihui Lifa</em>. The Outer Section — the Islamic half — was not a supplement or an afterthought. It was a foundation.</p>
 
-<p class="article-closing"><em>다음에 소주 한 병을 보게 되면 기억해주세요: 이 기술을 처음 완성한 손은 바그다드의 무슬림 학자들의 손이었습니다. 그리고 이 기억을 담은 단어 — 아라크 — 는 천 년이 지나도 여전히 개성 거리에서 들립니다.</em></p>`
+<p>When King Sejong looked up at the Korean sky and wanted to understand it with precision, he turned not only to Chinese scholarship but also to the accumulated wisdom of Muslim astronomers — scholars from Baghdad, Samarkand, and Persia who had spent centuries mapping the heavens with care and devotion.</p>
+
+<p class="article-closing"><em>The stars that King Sejong charted above Hanyang were the same stars that Muslim astronomers had studied from the rooftops of Baghdad and the observatories of Samarkand. The sky connected them — as it connects us all.</em></p>`,
+
+    tr: `<h2>Yıldızlara Bakan Bir Kral</h2>
+
+<p>Kral Sejong (세종대왕, saltanat: 1418–1450) denildiğinde çoğu insanın aklına <em>Hangul</em> — Kore alfabesi — gelir. Ve haklı olarak. Ancak Sejong bir dilbilimciden çok daha fazlasıydı. Gökleri anlamanın yeryüzünü yönetmek için vazgeçilmez olduğuna inanan bir bilim adamı kraldı.</p>
+
+<p>Onun saltanatı altında Kore, tarihçilerin <strong>Bilimde Altın Çağ</strong> dediği dönemi yaşadı. Yeni aletler inşa edildi, yeni takvimler hesaplandı, yeni yıldız haritaları çizildi. Ancak çoğu insanın hiç duymadığı kısım şu: bu başarıların arkasındaki en önemli bilgilerin bir kısmı Müslüman dünyasından geldi.</p>
+
+<h2>Sorun: Ödünç Alınmış Takvimler Kore Gökyüzüne Uymuyor</h2>
+
+<p>Yüzyıllar boyunca Kore, Çin astronomi takvimlerine bağımlıydı — Pekin veya Nankin'in enlemi için tasarlanmış sistemler, Seul için değil. Bu da tutulma tahminlerinin, mevsimsel hesaplamaların ve gezegen konumlarının Koreli gözlemciler için sıklıkla hafif yanlış olması anlamına geliyordu.</p>
+
+<p>Sejong daha iyisini istiyordu. <strong>Kore Yarımadası'na özel olarak kalibre edilmiş</strong> bir takvim sistemi istiyordu — Hanyang'ın (한양, günümüz Seul) enleminden göksel olayları hassas bir şekilde tahmin edebilen bir sistem. Bunu başarmak için saray gökbilimcilerinin dünyadaki en iyi astronomi bilgisine ihtiyacı vardı.</p>
+
+<p>Ve o dönemde dünyadaki en iyi astronomi bilgisinin derin İslami kökleri vardı.</p>
+
+<h2>Huihui Takvimi: Doğu Asya'ya İslami Bir Armağan</h2>
+
+<p>Moğol-Yuan hanedanlığı (1271–1368) döneminde imparatorluğun yöneticileri, Müslüman gökbilimcileri İran, Orta Asya ve Arap dünyasından başkentleri Hanbalık'a (günümüz Pekin) getirdi. Çin kaynaklarında <strong>Huihui (回回)</strong> — Kore'de de Müslümanlar için kullanılan aynı terim — olarak bilinen bu alimler, astronomik hesaplamaların doğruluğunu artırmakla görevlendirildi.</p>
+
+<p>Sonuç: <strong><em>Huihui Lifa</em></strong> (回回曆法, "Müslüman Takvim Sistemi") — İslami <em>zic</em> geleneğine dayanan bir astronomik tablo seti. Bu tablolar, Semerkant, Marağa ve Bağdat'ın büyük İslami rasathanelerinden elde edilen yüzyıllık gözlemleri ve matematiksel yöntemleri içeriyordu.</p>
+
+<p><em>Huihui Lifa</em> birçok açıdan dikkate değerdi:</p>
+
+<ul>
+<li><strong>Üstün gezegen modelleri:</strong> İslam gökbilimcileri, beş görülebilir gezegenin (Merkür, Venüs, Mars, Jüpiter, Satürn) konumlarını hesaplamak ve hareketlerini tahmin etmek için daha doğru yöntemler geliştirmişti.</li>
+<li><strong>Tutulma tahmini:</strong> İslami tablolar, güneş ve ay tutulmalarını tahmin etmek için daha hassas yöntemler sunuyordu — Doğu Asya saraylarında büyük siyasi ve manevi öneme sahip olaylar.</li>
+<li><strong>Trigonometrik temeller:</strong> İslam matematiği, özellikle küresel trigonometri, Çin tabanlı sistemlerin sahip olmadığı araçlar sağlıyordu.</li>
+</ul>
+
+<p>Bu sistem, Yuan sarayında Çin <em>Shoushi</em> takvimiyle birlikte resmi olarak kullanılıyordu. Koreli gökbilimciler Pekin'e eğitime gittiklerinde, İslami tabloları keşfettiler — ve derinden etkilendiler.</p>
+
+<h2>Chiljeongsan: İki Geleneğin Üzerine İnşa Edilen Kore Şaheseri</h2>
+
+<p>Sejong en yetenekli alimlerini — aralarında <strong>Yi Sun-ji</strong> (이순지) ve <strong>Kim Dam</strong> (김담) — özgün bir Kore astronomi sistemi oluşturmakla görevlendirdi. Yaklaşık <strong>1444</strong> yılında tamamlanan sonuç: <strong><em>Chiljeongsan</em></strong> (칠정산, "Yedi Işığın Hesaplamaları").</p>
+
+<p><em>Chiljeongsan</em> çığır açıcıydı, çünkü <strong>iki bölümden</strong> oluşuyordu:</p>
+
+<ul>
+<li><strong><em>Naepyeon</em></strong> (내편, "İç Bölüm"): Çin <em>Shoushi</em> (授時) takvimine dayanır, Seul'ün enlemine uyarlanmıştır.</li>
+<li><strong><em>Oepyeon</em></strong> (외편, "Dış Bölüm"): Doğrudan <strong><em>Huihui Lifa</em></strong> — İslami astronomi tablolarına — dayanır.</li>
+</ul>
+
+<blockquote>Chiljeongsan'ın Dış Bölümü, güneş, ay ve beş gezegenin hareketlerini yalnızca Çin tabanlı sistemlerin başaramayacağı bir hassasiyetle hesaplamak için İslami hesaplama yöntemlerinden yararlandı.</blockquote>
+
+<p>Bu küçük bir dipnot değildi. İslami <em>Oepyeon</em>, temel bir unsur olarak kabul ediliyordu — Kore astronomisinin genel doğruluğunu artıran kontroller, düzeltmeler ve alternatif hesaplamalar sunan <strong>tamamlayıcı bir sistem</strong>.</p>
+
+<h2>Müslüman Gökbilimcilerin Katkıları</h2>
+
+<p><em>Huihui Lifa</em> aracılığıyla Kore'ye ulaşan İslami astronomi geleneği, yüzyılların birikmiş bilgisini taşıyordu:</p>
+
+<ul>
+<li><strong>Astronomi:</strong> Marağa (1259) ve Semerkant (1420) rasathanelerinde geliştirilen İslami astronomi aletleri ve gözlem yöntemleri, gezegen konumları ve yıldız koordinatlarının daha hassas ölçümlerini sağladı.</li>
+<li><strong>Matematik:</strong> Müslüman matematikçilerin küresel trigonometri geliştirmesi, farklı enlemlerden göksel konumların daha doğru hesaplanmasını mümkün kıldı — tam da Sejong'un çözmeye çalıştığı sorun.</li>
+<li><strong>Takvim Bilimi:</strong> Yüzyıllar süren dikkatli gözlemlerle derlenen İslami <em>zic</em> tabloları, Kore astronomik bilgisini zenginleştiren ampirik veri hazinesi sundu.</li>
+</ul>
+
+<p>Sejong döneminde inşa edilen aletler — aralarında <strong><em>Honcheonui</em></strong> (혼천의, usturlab küre), <strong><em>Honsang</em></strong> (혼상, gök küresi) ve <strong><em>Angbu Ilgu</em></strong> (앙부일구, yarımküresel güneş saati) — bu Doğu Asya ve İslami astronomi geleneklerinin sentezini yansıtıyordu.</p>
+
+<h2>Yüzyıllar Boyunca Süren Bir Miras</h2>
+
+<p>İslami astronominin Kore'deki etkisi Sejong ile sona ermedi. <em>Huihui Lifa</em> tabanlı hesaplamalar, Koreli gökbilimciler tarafından <strong>18. ve 19. yüzyılın başlarına</strong> kadar — 400 yılı aşkın dikkat çekici bir süre boyunca — kullanılmaya ve referans alınmaya devam etti.</p>
+
+<p>Kore saray gökbilimcileri, tahminlerini düzenli olarak hem Çin kökenli hem de İslami kökenli sistemleri kullanarak çapraz kontrol ediyordu. İki sistem farklı sonuçlar verdiğinde, bu genellikle daha derin bir araştırmaya ve gelişmiş bir anlayışa yol açıyordu — çeşitli bilimsel geleneklerin entegre edilmesinin değerine bir kanıt.</p>
+
+<h2>Gözler Önünde Gizlenmiş</h2>
+
+<p>Bugün <em>Chiljeongsan</em>, Kore biliminin en büyük başarılarından biri olarak kutlanır. Ulusal bir gurur kaynağıdır. Ancak yaratılmasına yapılan İslami katkı nadiren bahsedilir — kötü niyetten değil, yalnızca bu bağlantının kamusal bellekten silinmiş olmasından.</p>
+
+<p>Yine de kanıtlar açık ve iyi belgelenmiştir. Koreli tarihçiler ve gökbilimciler, <em>Chiljeongsan</em>'ın <em>Huihui Lifa</em>'ya borçlu olduğunu uzun süredir kabul etmiştir. Dış Bölüm — İslami yarısı — bir ek veya sonradan akla gelen bir şey değildi. Bir temeldi.</p>
+
+<p>Kral Sejong Kore gökyüzüne bakıp onu hassasiyetle anlamak istediğinde, yalnızca Çin bilgeliğine değil, aynı zamanda Müslüman gökbilimcilerin — Bağdat, Semerkant ve İran'dan, gökleri özenle ve adanmışlıkla yüzyıllar boyunca haritalamış alimlerin — birikmiş hikmetine de başvurdu.</p>
+
+<p class="article-closing"><em>Kral Sejong'un Hanyang semalarında haritaladığı yıldızlar, Müslüman gökbilimcilerin Bağdat çatılarından ve Semerkant rasathanelerinden incelediği aynı yıldızlardı. Gökyüzü onları birbirine bağladı — bizi hepimizi bağladığı gibi.</em></p>`,
+
+    ko: `<h2>별을 바라본 왕</h2>
+
+<p>세종대왕(재위: 1418–1450)을 떠올리면 대부분의 사람들은 <em>한글</em>을 생각합니다. 당연한 일입니다. 하지만 세종은 언어학자 이상의 인물이었습니다. 하늘을 이해하는 것이 땅을 다스리는 데 필수적이라고 믿었던 과학자 군주였습니다.</p>
+
+<p>세종의 치세 아래 한국은 역사가들이 말하는 <strong>과학의 황금기</strong>를 경험했습니다. 새로운 기구가 만들어지고, 새로운 역법이 계산되고, 새로운 성도가 그려졌습니다. 하지만 대부분의 사람이 듣지 못한 부분이 있습니다: 이 업적들의 가장 중요한 지식 중 일부는 무슬림 세계에서 왔다는 것입니다.</p>
+
+<h2>문제: 빌린 역법은 한국 하늘에 맞지 않다</h2>
+
+<p>수세기 동안 한국은 중국 천문 역법에 의존했습니다 — 서울이 아닌 베이징이나 난징의 위도에 맞게 설계된 시스템이었습니다. 이는 일식 예측, 계절 계산, 행성 위치가 한국 관측자에게 종종 약간 부정확했음을 의미합니다.</p>
+
+<p>세종은 더 나은 것을 원했습니다. <strong>한반도에 특별히 맞춤 보정된</strong> 역법 체계를 원했습니다 — 한양(한양, 현재의 서울)의 위도에서 천문 현상을 정밀하게 예측할 수 있는 것을. 이를 달성하기 위해 궁정 천문학자들에게는 세계 최고의 천문 지식이 필요했습니다.</p>
+
+<p>그리고 그 당시 세계 최고의 천문 지식에는 깊은 이슬람적 뿌리가 있었습니다.</p>
+
+<h2>회회력: 동아시아에 대한 이슬람의 선물</h2>
+
+<p>몽골-원 왕조(1271–1368) 시기에 제국의 지배자들은 페르시아, 중앙아시아, 아랍 세계에서 무슬림 천문학자들을 수도 대도(현재의 베이징)로 불러왔습니다. 중국 사료에서 <strong>회회(回回)</strong> — 한국에서도 무슬림을 지칭하는 데 사용된 동일한 용어 — 로 알려진 이 학자들은 천문 계산의 정확도를 높이는 임무를 맡았습니다.</p>
+
+<p>그 결과물이 <strong><em>회회력법</em></strong>(回回曆法, "무슬림 역법 체계") — 이슬람 <em>지즈</em> 전통에 기반한 천문표 세트였습니다. 이 표들은 사마르칸트, 마라가, 바그다드의 위대한 이슬람 천문대에서 얻은 수세기의 관측과 수학적 방법론을 담고 있었습니다.</p>
+
+<p><em>회회력법</em>이 놀라웠던 이유는 여러 가지입니다:</p>
+
+<ul>
+<li><strong>우월한 행성 모델:</strong> 이슬람 천문학자들은 다섯 가시 행성(수성, 금성, 화성, 목성, 토성)의 위치를 계산하고 움직임을 예측하는 더 정확한 방법을 개발했습니다.</li>
+<li><strong>일식 예측:</strong> 이슬람 천문표는 일식과 월식을 예측하는 더 정밀한 방법을 제공했습니다 — 동아시아 궁정에서 엄청난 정치적, 영적 중요성을 지닌 사건이었습니다.</li>
+<li><strong>삼각법적 기초:</strong> 이슬람 수학, 특히 구면삼각법은 중국 체계에는 없던 도구를 제공했습니다.</li>
+</ul>
+
+<p>이 체계는 원나라 궁정에서 중국의 <em>수시력</em>과 함께 공식적으로 운영되었습니다. 한국 천문학자들이 베이징으로 유학을 갔을 때, 그들은 이슬람 천문표를 접하게 되었고 — 깊은 감명을 받았습니다.</p>
+
+<h2>칠정산: 두 전통 위에 세워진 한국의 걸작</h2>
+
+<p>세종은 최고의 학자들 — <strong>이순지</strong>(이순지)와 <strong>김담</strong>(김담) 등 — 에게 독자적인 한국 천문 체계를 만들도록 명했습니다. 약 <strong>1444년</strong>에 완성된 결과물이 바로 <strong><em>칠정산</em></strong>(칠정산, "일곱 빛의 계산")입니다.</p>
+
+<p><em>칠정산</em>이 획기적이었던 이유는 <strong>두 부분</strong>으로 구성되었기 때문입니다:</p>
+
+<ul>
+<li><strong><em>내편</em></strong>(내편): 중국의 <em>수시력</em>(授時曆)에 기반하되 서울의 위도에 맞게 조정.</li>
+<li><strong><em>외편</em></strong>(외편): <strong><em>회회력법</em></strong> — 이슬람 천문표에 직접 기반.</li>
+</ul>
+
+<blockquote>칠정산의 외편은 해, 달, 다섯 행성의 움직임을 중국 체계만으로는 달성할 수 없는 정밀도로 계산하기 위해 이슬람 계산법을 활용했습니다.</blockquote>
+
+<p>이것은 사소한 각주가 아니었습니다. 이슬람에 기반한 <em>외편</em>은 필수적인 것으로 여겨졌으며 — 한국 천문학의 전체적인 정확도를 높이는 검증, 보정, 대안적 계산을 제공하는 <strong>보완적 체계</strong>였습니다.</p>
+
+<h2>무슬림 천문학자들의 기여</h2>
+
+<p><em>회회력법</em>을 통해 한국에 전해진 이슬람 천문학 전통은 수세기에 걸친 축적된 지식을 담고 있었습니다:</p>
+
+<ul>
+<li><strong>천문학:</strong> 마라가(1259)와 사마르칸트(1420) 천문대에서 정교하게 발전시킨 이슬람 천문 기구와 관측 방법론은 행성 위치와 항성 좌표의 더 정밀한 측정을 가능하게 했습니다.</li>
+<li><strong>수학:</strong> 무슬림 수학자들의 구면삼각법 발전은 다른 위도에서의 천체 위치를 더 정확하게 계산할 수 있게 했습니다 — 바로 세종이 해결하려 했던 문제였습니다.</li>
+<li><strong>역법 과학:</strong> 수세기에 걸친 세심한 관측으로 편찬된 이슬람 <em>지즈</em> 표는 한국 천문 지식을 풍요롭게 한 방대한 경험적 데이터를 제공했습니다.</li>
+</ul>
+
+<p>세종 시대에 제작된 기구들 — <strong><em>혼천의</em></strong>(혼천의, 혼천의), <strong><em>혼상</em></strong>(혼상, 천구의), <strong><em>앙부일구</em></strong>(앙부일구, 반구형 해시계) 등 — 은 이 동아시아와 이슬람 천문학 전통의 융합을 반영합니다.</p>
+
+<h2>수세기에 걸친 유산</h2>
+
+<p>이슬람 천문학의 한국에 대한 영향은 세종으로 끝나지 않았습니다. <em>회회력법</em> 기반의 계산은 <strong>18세기와 19세기 초</strong>까지 — 400년이 넘는 놀라운 기간 동안 — 한국 천문학자들에 의해 계속 사용되고 참조되었습니다.</p>
+
+<p>한국 궁정 천문학자들은 정기적으로 중국 기원 체계와 이슬람 기원 체계 양쪽을 이용해 예측을 교차 검증했습니다. 두 체계가 다른 결과를 낼 때, 이는 종종 더 깊은 탐구와 향상된 이해로 이어졌습니다 — 다양한 과학 전통의 통합이 갖는 가치를 보여주는 증거입니다.</p>
+
+<h2>눈앞에 숨겨진 사실</h2>
+
+<p>오늘날 <em>칠정산</em>은 한국 과학의 가장 위대한 성취 중 하나로 기념됩니다. 국가적 자긍심의 대상입니다. 하지만 그 창조에 대한 이슬람의 기여는 거의 언급되지 않습니다 — 악의에서가 아니라, 그 연결이 단순히 공공의 기억에서 사라졌기 때문입니다.</p>
+
+<p>그러나 증거는 명확하고 잘 기록되어 있습니다. 한국의 역사학자와 천문학자들은 <em>칠정산</em>이 <em>회회력법</em>에 빚지고 있음을 오래전부터 인정해 왔습니다. 외편 — 이슬람 절반 — 은 부록이나 사후 첨가가 아니었습니다. 그것은 기초였습니다.</p>
+
+<p>세종대왕이 한국 하늘을 올려다보며 정밀하게 이해하고자 했을 때, 그는 중국의 학문에만 의지한 것이 아니라, 무슬림 천문학자들 — 바그다드, 사마르칸트, 페르시아에서 수세기 동안 정성과 헌신으로 하늘을 관측해 온 학자들 — 의 축적된 지혜에도 의지했습니다.</p>
+
+<p class="article-closing"><em>세종대왕이 한양 하늘 위에 그렸던 별들은 무슬림 천문학자들이 바그다드 옥상과 사마르칸트 천문대에서 연구했던 바로 그 별들이었습니다. 하늘이 그들을 이어주었습니다 — 우리 모두를 이어주듯이.</em></p>`
   }
 };

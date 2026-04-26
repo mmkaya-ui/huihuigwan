@@ -302,18 +302,18 @@ const TRANSLATIONS = {
   "art1.link": { en: "Read the full story", tr: "Hikâyenin tamamını oku", ko: "전체 이야기 읽기" },
 
   // Article 2
-  "art2.category": { en: "Culture", tr: "Kültür", ko: "문화" },
-  "art2.meta.cat": { en: "Culture", tr: "Kültür", ko: "문화" },
-  "art2.meta.read": { en: "8 min read", tr: "8 dk okuma", ko: "8분 읽기" },
+  "art2.category": { en: "Science & Heritage", tr: "Bilim ve Miras", ko: "과학과 유산" },
+  "art2.meta.cat": { en: "Science & Heritage", tr: "Bilim ve Miras", ko: "과학과 유산" },
+  "art2.meta.read": { en: "10 min read", tr: "10 dk okuma", ko: "10분 읽기" },
   "art2.title": {
-    en: "Did You Know? Korea's Most Famous Drink Has Arabic Roots",
-    tr: "Biliyor muydunuz? Kore'nin En Ünlü İçeceğinin Arapça Kökleri Var",
-    ko: "알고 계셨나요? 한국에서 가장 유명한 음료에는 아랍의 뿌리가 있습니다"
+    en: "When Muslim Astronomers Helped Map the Korean Sky",
+    tr: "Müslüman Gökbilimciler Kore Gökyüzünün Haritasını Çıkarmaya Nasıl Yardım Etti",
+    ko: "무슬림 천문학자들이 한국의 하늘을 그리는 데 기여하다"
   },
   "art2.excerpt": {
-    en: "The distillation technique behind Korea's beloved soju (소주) traces back to Middle Eastern <em>arak</em>, brought to the peninsula through Mongol channels during the 13th century.",
-    tr: "Kore'nin sevilen içeceği soju'nun (소주) arkasındaki damıtma tekniği, 13. yüzyılda Moğol kanallarıyla yarımadaya getirilen Ortadoğu kökenli <em>arak</em>'a dayanır.",
-    ko: "한국인이 사랑하는 소주(소주) 뒤에 있는 증류 기술은 13세기 몽골 경로를 통해 한반도에 전해진 중동의 <em>아락</em>에 그 기원을 두고 있습니다."
+    en: "King Sejong's greatest scientific achievement — the Chiljeongsan — was built on Islamic astronomical tables. The story of how Muslim star charts shaped Korean science for centuries.",
+    tr: "Kral Sejong'un en büyük bilimsel başarısı — Chiljeongsan — İslami astronomi tablolarına dayanıyordu. Müslüman yıldız haritalarının Kore bilimini yüzyıllarca nasıl şekillendirdiğinin hikayesi.",
+    ko: "세종대왕의 가장 위대한 과학적 업적 — 칠정산 — 은 이슬람 천문표를 기반으로 만들어졌습니다. 무슬림 성도가 수세기 동안 한국 과학을 어떻게 형성했는지의 이야기."
   },
   "art2.link": { en: "Read more", tr: "Devamını oku", ko: "더 읽기" },
 
@@ -387,9 +387,9 @@ const TRANSLATIONS = {
     ko: "인스타그램, 틱톡, 페이스북을 위해 디자인된 짧은 콘텐츠 — 아름다움, 스토리텔링, 그리고 문화적 연결로 젊은 한국인들에게 다가갑니다."
   },
   "social.card1": {
-    en: "Did you know? 🇰🇷☪️ Soju's roots are in Arabic distillation technology.",
-    tr: "Biliyor muydunuz? 🇰🇷☪️ Soju'nun kökleri Arap damıtma teknolojisinde yatıyor.",
-    ko: "알고 계셨나요? 🇰🇷☪️ 소주의 뿌리는 아랍 증류 기술에 있습니다."
+    en: "Did you know? 🇰🇷☪️ King Sejong used Islamic astronomical tables to build Korea's greatest calendar system.",
+    tr: "Biliyor muydunuz? 🇰🇷☪️ Kral Sejong, Kore'nin en büyük takvim sistemini oluşturmak için İslami astronomi tablolarını kullandı.",
+    ko: "알고 계셨나요? 🇰🇷☪️ 세종대왕은 한국 최고의 역법 체계를 만들기 위해 이슬람 천문표를 사용했습니다."
   },
   "social.card2": {
     en: "1024: The first Muslim merchant delegation arrived in Goryeo. They never left. ✨",
