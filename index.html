@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hui Hui Gwan 回回館 — Islamic & Korean Heritage</title>
+  <meta name="description" content="Hui Hui Gwan (回回館) — A platform uncovering the rich and hidden history of Islam in Korea. Writings, photographs, art, designs, and cultural reflections on the shared heritage of Islam and the Korean Peninsula.">
+  <meta name="keywords" content="Islam Korea, Korean Muslim history, Goryeo Muslims, Hui Hui, Islamic Korean heritage, 회회, 고려, Korean Islamic art">
+  <meta property="og:title" content="Hui Hui Gwan 回回館 — Where Islam Meets Korea">
+  <meta property="og:description" content="Uncovering the surprisingly rich history of Islam in Korea through beauty, storytelling, and cultural connection.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://huihuigwan.com">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='80' font-size='80'>🏛️</text></svg>">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">回回館</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo" id="nav-logo">
+        <div class="nav-logo-icon">回</div>
+        <div class="nav-logo-text">
+          Hui Hui Gwan
+          <span>회회관 · <span data-i18n="nav.subtitle">Islamic Korean Heritage</span></span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#history" data-i18n="nav.history">History</a>
+        <a href="#stories" data-i18n="nav.stories">Stories</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#social" data-i18n="nav.social">Social</a>
+        <a href="#products" data-i18n="nav.shop">Heritage Shop</a>
+        <a href="#newsletter" class="nav-cta" data-i18n="nav.join">Join Us</a>
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-switcher-btn" id="langBtn" aria-label="Change language">
+          <span class="lang-globe">🌐</span>
+          <span class="lang-current" id="langCurrent">EN</span>
+          <span class="lang-arrow">▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-option active" data-lang="en">
+            <span class="lang-flag">🇬🇧</span>
+            <span>English</span>
+          </button>
+          <button class="lang-option" data-lang="tr">
+            <span class="lang-flag">🇹🇷</span>
+            <span>Türkçe</span>
+          </button>
+          <button class="lang-option" data-lang="ko">
+            <span class="lang-flag">🇰🇷</span>
+            <span>한국어</span>
+          </button>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-pattern.png" alt="Islamic-Korean geometric pattern fusion">
+    </div>
+    <div class="hero-gradient"></div>
+    
+    <!-- Floating geometric decorations -->
+    <div class="hero-geo hero-geo-1"></div>
+    <div class="hero-geo hero-geo-2"></div>
+    <div class="hero-geo hero-geo-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span data-i18n="hero.badge">A Ṣadaqa Jāriya · 사다까 자리야</span>
+      </div>
+      <h1 class="hero-title-hanja">回回館</h1>
+      <p class="hero-title-romanized">Hui Hui Gwan · 회회관</p>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">
+        Uncovering the rich but hidden history of Islam in Korea — 
+        through beauty, storytelling, and cultural connection. 
+        Not something foreign, but something woven into your own story.
+      </p>
+      <div class="hero-actions">
+        <a href="#history" class="btn btn-primary" id="hero-cta-discover">
+          <span>✦</span> <span data-i18n="hero.cta.discover">Discover the History</span>
+        </a>
+        <a href="#about" class="btn btn-secondary" id="hero-cta-story" data-i18n="hero.cta.story">
+          Our Story
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span data-i18n="hero.scroll">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT / MISSION SECTION
+       ============================================ -->
+  <section class="section-about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image">
+            <img src="images/gaeseong-mosque.png" alt="Artistic rendering of a Muslim prayer hall in Goryeo-era Gaeseong">
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+        <div class="about-text reveal-right">
+          <div class="section-label" data-i18n="about.label">About Hui Hui Gwan</div>
+          <h2 class="section-title">
+            <span data-i18n="about.title">A Humble Endeavor to Reconnect</span> <span class="highlight" data-i18n="about.title.highlight">Two Ancient Worlds</span>
+          </h2>
+          <p class="lead" data-i18n="about.lead" data-i18n-html>
+            <em>Hui Hui Gwan</em> (回回館) — literally the "House of the Hui Hui" — takes its name from the historical term used in East Asia to refer to Muslim communities. In Korea, these communities once thrived.
+          </p>
+          <p data-i18n="about.desc">
+            On this platform, we bring together — in a thoughtful and careful manner — writings, photographs, works of art, designs, historical notes, and cultural reflections relating to the shared heritage of Islam and Korea. We are not here to lecture, but to spark curiosity and warm hearts through beauty, storytelling, and cultural connection.
+          </p>
+          <div class="about-meaning">
+            <h4 data-i18n="about.meaning.title">What Does 回回 Mean?</h4>
+            <p data-i18n="about.meaning.desc">
+              回回 (Hui Hui / 회회) was the historical term used across East Asia to refer to Muslims — derived from the Uyghur word for Muslim communities. In Korean records from the Goryeo Dynasty (918–1392), these people were documented as traders, astronomers, healers, and court officials who helped shape the peninsula's golden era.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission Cards -->
+      <div class="mission-cards">
+        <div class="mission-card reveal" style="transition-delay: 0.1s">
+          <div class="mission-card-icon jade">📜</div>
+          <h3 data-i18n="mission1.title">Uncover History</h3>
+          <p data-i18n="mission1.desc">Share the surprisingly rich but little-known history of Islam in Korea — from the first Arab traders in 1024 to the Muslim astronomers of the Goryeo court.</p>
+        </div>
+        <div class="mission-card reveal" style="transition-delay: 0.2s">
+          <div class="mission-card-icon gold">🎨</div>
+          <h3 data-i18n="mission2.title">Create Connection</h3>
+          <p data-i18n="mission2.desc">Design social media content for Instagram, TikTok, and Facebook that reaches young Koreans — sparking curiosity through beauty and storytelling, not pressure.</p>
+        </div>
+        <div class="mission-card reveal" style="transition-delay: 0.3s">
+          <div class="mission-card-icon coral">🏺</div>
+          <h3 data-i18n="mission3.title">Cultural Products</h3>
+          <p data-i18n="mission3.desc">Design heritage products that blend Islamic and Korean aesthetics — celadon with arabesque, hanbok with geometric motifs — making this a self-sustaining ṣadaqa jāriya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TIMELINE / HISTORY SECTION
+       ============================================ -->
+  <section class="section-timeline" id="history">
+    <div class="timeline-bg-image">
+      <img src="images/silk-road-map.png" alt="Ancient Silk Road map connecting Islamic world to Korea">
+    </div>
+    <div class="container timeline-wrapper">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-label" style="justify-content: center;" data-i18n="timeline.label">A Thousand-Year Journey</div>
+        <h2 class="section-title" style="color: var(--cream);">
+          <span data-i18n="timeline.title">Islam in Korea: From the</span> <span class="highlight" style="color: var(--gold-light);" data-i18n="timeline.title.highlight">Silk Road</span> <span data-i18n="timeline.title.suffix">to Seoul</span>
+        </h2>
+        <p style="color: rgba(245,240,232,0.6); margin-bottom: 1rem;" data-i18n="timeline.desc">
+          Trace the journey of Muslim travelers, merchants, scholars, and families who left their mark on Korean history across a millennium.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Timeline Item 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl1.year">845 CE</div>
+            <div class="timeline-title" data-i18n="tl1.title">First Encounters: Arab Merchants on the Korean Coast</div>
+            <div class="timeline-desc" data-i18n="tl1.desc">
+              Early references in Arabic geographic texts by writers such as Ibn Khurdādhbih mention 
+              a land called "al-Sīla" (新羅 — Silla), describing Korean ports as destinations 
+              for Arab and Persian maritime traders along the eastern Silk Road.
+            </div>
+            <span class="timeline-tag" data-i18n="tl1.tag">Maritime Trade</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl2.year">1024 CE</div>
+            <div class="timeline-title" data-i18n="tl2.title">The First Official Muslim Delegation Arrives in Goryeo</div>
+            <div class="timeline-desc" data-i18n="tl2.desc" data-i18n-html>
+              During the reign of King Hyeonjong (현종), a large group of Muslim traders — 
+              referred to as <em>Daesik</em> (大食, from the Arabic <em>Tajir</em> — merchant) — 
+              officially arrive in the Goryeo Kingdom. A second group follows the next year. 
+              Many settle permanently.
+            </div>
+            <span class="timeline-tag" data-i18n="tl2.tag">Goryeo Dynasty</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 3 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl3.year">13th Century</div>
+            <div class="timeline-title" data-i18n="tl3.title">The Hui Hui Era: Muslim Officials in the Goryeo Court</div>
+            <div class="timeline-desc" data-i18n="tl3.desc" data-i18n-html>
+              Under Mongol-Yuan influence, Central Asian Muslims (known as <em>Hui Hui / 回回</em>) 
+              arrive in Korea as administrators, scholars, and envoys. Among them: 
+              <strong>Jang Sun-ryong (장순룡)</strong>, a Uyghur Muslim who becomes a high-ranking 
+              court official, marries a Korean woman, and founds the <strong>Deoksu Jang clan (덕수 장씨)</strong> — 
+              a Korean family that persists to this day.
+            </div>
+            <span class="timeline-tag" data-i18n="tl3.tag">Royal Court</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 4 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl4.year">1274–1356</div>
+            <div class="timeline-title" data-i18n="tl4.title">Ye-gung (禮宮): The First Mosques on Korean Soil</div>
+            <div class="timeline-desc" data-i18n="tl4.desc" data-i18n-html>
+              Muslim communities in the capital Gaeseong (개성) build <em>Ye-gung</em> 
+              (예궁 — ceremonial halls, effectively mosques) for communal prayer. 
+              They maintain their faith while integrating into Korean society, contributing 
+              knowledge of Islamic astronomy, medicine, and calendar systems.
+            </div>
+            <span class="timeline-tag" data-i18n="tl4.tag">Cultural Heritage</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 5 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl5.year">14th Century</div>
+            <div class="timeline-title" data-i18n="tl5.title">쌍화점 (Ssanghwajeom): Muslims in Goryeo Pop Culture</div>
+            <div class="timeline-desc" data-i18n="tl5.desc" data-i18n-html>
+              The famous Goryeo-era song <em>Ssanghwajeom</em> (쌍화점 — "The Dumpling Shop") 
+              portrays Muslim merchants running shops in the capital: <em>"When visiting Ssanghwajeom 
+              to buy Ssanghwa, a Hoehoe (Muslim) grabbed my wrist."</em> The song reflects 
+              how deeply Muslim traders were woven into everyday Goryeo life.
+            </div>
+            <span class="timeline-tag" data-i18n="tl5.tag">Literature & Arts</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 6 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl6.year">1392–1427</div>
+            <div class="timeline-title" data-i18n="tl6.title">Joseon Transition: The Quiet Disappearance</div>
+            <div class="timeline-desc" data-i18n="tl6.desc">
+              The Joseon Dynasty ushers in strict Neo-Confucian rule. In 1427, King Sejong (세종대왕) 
+              orders Muslims to abandon their traditional headgear, close their Ye-gung, 
+              and conform to Confucian norms. The visible practice of Islam in Korea gradually fades — 
+              but the bloodlines, surnames, and cultural imprints remain.
+            </div>
+            <span class="timeline-tag" data-i18n="tl6.tag">Joseon Dynasty</span>
+          </div>
+        </div>
+
+        <!-- Timeline Item 7 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year" data-i18n="tl7.year">1976</div>
+            <div class="timeline-title" data-i18n="tl7.title">Seoul Central Mosque: Islam Returns to Korea</div>
+            <div class="timeline-desc" data-i18n="tl7.desc">
+              After centuries of absence, the Seoul Central Mosque opens in Itaewon (이태원) — 
+              Korea's first purpose-built mosque. Today, Korea is home to an estimated 
+              200,000 Muslims, including Korean converts and immigrant communities, 
+              continuing a connection that began over a millennium ago.
+            </div>
+            <span class="timeline-tag" data-i18n="tl7.tag">Modern Era</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ARTICLES / STORIES SECTION
+       ============================================ -->
+  <section class="section-articles" id="stories">
+    <div class="container">
+      <div class="articles-header">
+        <div>
+          <div class="section-label" data-i18n="articles.label">Stories & Discoveries</div>
+          <h2 class="section-title">
+            <span data-i18n="articles.title">Readings for</span> <span class="highlight" data-i18n="articles.title.highlight">Curious Hearts</span>
+          </h2>
+        </div>
+        <a href="#" class="btn btn-outline" id="articles-view-all" data-i18n="articles.viewall">View All Articles →</a>
+      </div>
+
+      <div class="articles-grid">
+        <!-- Featured Article -->
+        <div class="article-card article-card-featured reveal">
+          <div class="article-card-image">
+            <img src="images/goryeo-traders.png" alt="Muslim merchants arriving at Gaeseong port during the Goryeo Dynasty">
+            <span class="article-card-category" data-i18n="art1.category">Featured</span>
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span data-i18n="art1.meta.cat">History</span>
+              <span>·</span>
+              <span data-i18n="art1.meta.read">12 min read</span>
+            </div>
+            <h3 class="article-card-title" data-i18n="art1.title">
+              The Muslim Merchants Who Built Goryeo's Golden Age — And Left Their Names in Korean History
+            </h3>
+            <p class="article-card-excerpt" data-i18n="art1.excerpt">
+              In September 1024, the first official delegation of Muslim traders arrived at the Goryeo court. 
+              They came from the lands of Dashi (大食) — the Abbasid Caliphate — and they would not leave. 
+              What they brought with them would change Korean astronomy, cuisine, and even genetics forever.
+            </p>
+            <span class="article-card-link">
+              <span data-i18n="art1.link">Read the full story</span> <span>→</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article-card reveal" style="transition-delay: 0.1s">
+          <div class="article-card-image">
+            <img src="images/seoul-mosque.png" alt="Seoul Central Mosque surrounded by cherry blossoms">
+            <span class="article-card-category" data-i18n="art2.category">Culture</span>
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span data-i18n="art2.meta.cat">Culture</span>
+              <span>·</span>
+              <span data-i18n="art2.meta.read">8 min read</span>
+            </div>
+            <h3 class="article-card-title" data-i18n="art2.title">
+              Did You Know? Korea's Most Famous Drink Has Arabic Roots
+            </h3>
+            <p class="article-card-excerpt" data-i18n="art2.excerpt" data-i18n-html>
+              The distillation technique behind Korea's beloved soju (소주) traces back to Middle Eastern <em>arak</em>, 
+              brought to the peninsula through Mongol channels during the 13th century.
+            </p>
+            <span class="article-card-link">
+              <span data-i18n="art2.link">Read more</span> <span>→</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article-card reveal" style="transition-delay: 0.2s">
+          <div class="article-card-image">
+            <img src="images/cultural-products.png" alt="Cultural products blending Islamic and Korean design">
+            <span class="article-card-category" data-i18n="art3.category">Heritage</span>
+          </div>
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span data-i18n="art3.meta.cat">Person Profile</span>
+              <span>·</span>
+              <span data-i18n="art3.meta.read">6 min read</span>
+            </div>
+            <h3 class="article-card-title" data-i18n="art3.title">
+              Jang Sun-ryong: The Uyghur Muslim Who Founded a Korean Dynasty
+            </h3>
+            <p class="article-card-excerpt" data-i18n="art3.excerpt">
+              The Deoksu Jang clan (덕수 장씨) traces its origins to a Muslim official from Central Asia 
+              who served the Goryeo court in the 13th century.
+            </p>
+            <span class="article-card-link">
+              <span data-i18n="art3.link">Read more</span> <span>→</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALLERY SECTION
+       ============================================ -->
+  <section class="section-gallery" id="gallery">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-label" style="justify-content: center;" data-i18n="gallery.label">Visual Heritage</div>
+        <h2 class="section-title">
+          <span data-i18n="gallery.title">A Gallery of</span> <span class="highlight" data-i18n="gallery.title.highlight">Shared Beauty</span>
+        </h2>
+        <p style="color: var(--text-secondary); margin-top: -0.5rem;" data-i18n="gallery.desc">
+          Photographs, art, and design that trace the aesthetic threads connecting Islamic and Korean traditions.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item wide reveal-scale" data-lightbox>
+          <img src="images/hero-pattern.png" alt="Islamic-Korean geometric pattern fusion art">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title" data-i18n="gal1.title">Geometric Harmony</div>
+            <div class="gallery-item-desc" data-i18n="gal1.desc">Islamic star patterns meet Korean dancheong 단청 motifs</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-scale" data-lightbox>
+          <img src="images/goryeo-traders.png" alt="Historical illustration of Muslim traders in Goryeo">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title" data-i18n="gal2.title">Shores of Gaeseong</div>
+            <div class="gallery-item-desc" data-i18n="gal2.desc">Arab and Persian traders arrive at the Goryeo port</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-scale" data-lightbox>
+          <img src="images/seoul-mosque.png" alt="Seoul Central Mosque with cherry blossoms">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title" data-i18n="gal3.title">Seoul Central Mosque</div>
+            <div class="gallery-item-desc" data-i18n="gal3.desc">A living symbol of Islam's return to Korea</div>
+          </div>
+        </div>
+
+        <div class="gallery-item reveal-scale" data-lightbox>
+          <img src="images/gaeseong-mosque.png" alt="Artistic rendering of Goryeo-era mosque">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title" data-i18n="gal4.title">Ye-gung 禮宮</div>
+            <div class="gallery-item-desc" data-i18n="gal4.desc">Artist's vision of a Goryeo-era Muslim prayer hall</div>
+          </div>
+        </div>
+
+        <div class="gallery-item wide reveal-scale" data-lightbox>
+          <img src="images/silk-road-map.png" alt="Antique silk road map showing trade routes to Korea">
+          <div class="gallery-item-overlay">
+            <div class="gallery-item-title" data-i18n="gal5.title">Silk Road to Silla</div>
+            <div class="gallery-item-desc" data-i18n="gal5.desc">The ancient trade routes that connected Baghdad to Gyeongju</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOCIAL MEDIA SECTION
+       ============================================ -->
+  <section class="section-social" id="social">
+    <div class="container">
+      <div class="social-header">
+        <div class="section-label" style="justify-content: center;" data-i18n="social.label">Social Media Content</div>
+        <h2 class="section-title">
+          <span data-i18n="social.title">Content That</span> <span class="highlight" data-i18n="social.title.highlight">Sparks Curiosity</span>
+        </h2>
+        <p style="color: var(--text-secondary);" data-i18n="social.desc">
+          Short-form content designed for Instagram, TikTok, and Facebook — reaching young Koreans 
+          with beauty, storytelling, and cultural connection.
+        </p>
+      </div>
+
+      <div class="social-platforms">
+        <button class="social-platform-tab active" id="tab-instagram">
+          <span>📸</span> Instagram
+        </button>
+        <button class="social-platform-tab" id="tab-tiktok">
+          <span>🎬</span> TikTok
+        </button>
+        <button class="social-platform-tab" id="tab-facebook">
+          <span>📘</span> Facebook
+        </button>
+      </div>
+
+      <div class="social-grid">
+        <div class="social-card reveal-scale" style="transition-delay: 0.05s">
+          <img src="images/hero-pattern.png" alt="Social content: Islamic geometric Korean fusion design">
+          <div class="social-card-overlay">
+            <div class="social-card-text" data-i18n="social.card1">Did you know? 🇰🇷☪️ Soju's roots are in Arabic distillation technology.</div>
+            <div class="social-card-stats">
+              <span>❤️ 2.4K</span>
+              <span>💬 187</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card reveal-scale" style="transition-delay: 0.1s">
+          <img src="images/goryeo-traders.png" alt="Social content: Goryeo traders illustration">
+          <div class="social-card-overlay">
+            <div class="social-card-text" data-i18n="social.card2">1024: The first Muslim merchant delegation arrived in Goryeo. They never left. ✨</div>
+            <div class="social-card-stats">
+              <span>❤️ 3.1K</span>
+              <span>💬 342</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card reveal-scale" style="transition-delay: 0.15s">
+          <img src="images/gaeseong-mosque.png" alt="Social content: Gaeseong mosque rendering">
+          <div class="social-card-overlay">
+            <div class="social-card-text" data-i18n="social.card3">In Goryeo-era Gaeseong, there were 'Ye-gung (禮宮)' — Islamic prayer halls. 🕌🏯</div>
+            <div class="social-card-stats">
+              <span>❤️ 1.8K</span>
+              <span>💬 156</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-card reveal-scale" style="transition-delay: 0.2s">
+          <img src="images/seoul-mosque.png" alt="Social content: Seoul mosque with cherry blossoms">
+          <div class="social-card-overlay">
+            <div class="social-card-text" data-i18n="social.card4">Seoul Itaewon Central Mosque 🌸 Islam is Korea's old story — not something new.</div>
+            <div class="social-card-stats">
+              <span>❤️ 4.7K</span>
+              <span>💬 521</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CULTURAL PRODUCTS SECTION
+       ============================================ -->
+  <section class="section-products" id="products">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <div class="section-label" style="justify-content: center;" data-i18n="products.label">Heritage Collection</div>
+        <h2 class="section-title">
+          <span data-i18n="products.title">Cultural Products — A Living</span> <span class="highlight" data-i18n="products.title.highlight">Ṣadaqa Jāriya</span>
+        </h2>
+        <p style="color: var(--text-secondary);" data-i18n="products.desc">
+          Carefully crafted items that blend Islamic and Korean design traditions — every purchase sustains this ongoing charity.
+        </p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card reveal" style="transition-delay: 0.1s">
+          <div class="product-card-image">
+            <img src="images/cultural-products.png" alt="Celadon tea set with Islamic geometric patterns">
+            <span class="product-card-badge" data-i18n="prod.badge">Coming Soon</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title" data-i18n="prod1.title">Celadon Arabesque Tea Set</h3>
+            <p class="product-card-desc" data-i18n="prod1.desc">
+              Traditional Korean celadon craft meets Islamic geometric star patterns — 
+              a tea set that tells a thousand-year story in jade-green glaze.
+            </p>
+            <div class="product-card-footer">
+              <span class="product-card-tag" data-i18n="prod1.tag">✦ Artisan Craft</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card reveal" style="transition-delay: 0.2s">
+          <div class="product-card-image">
+            <img src="images/hero-pattern.png" alt="Heritage art print of Islamic-Korean pattern">
+            <span class="product-card-badge" data-i18n="prod.badge">Coming Soon</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title" data-i18n="prod2.title">Dancheong × Arabesque Art Print</h3>
+            <p class="product-card-desc" data-i18n="prod2.desc">
+              Museum-quality giclée print merging Korean dancheong (단청) temple art 
+              with Islamic interlocking geometry. Limited edition, numbered and signed.
+            </p>
+            <div class="product-card-footer">
+              <span class="product-card-tag" data-i18n="prod2.tag">✦ Limited Edition</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card reveal" style="transition-delay: 0.3s">
+          <div class="product-card-image">
+            <img src="images/silk-road-map.png" alt="Silk Road heritage scarf">
+            <span class="product-card-badge" data-i18n="prod.badge">Coming Soon</span>
+          </div>
+          <div class="product-card-body">
+            <h3 class="product-card-title" data-i18n="prod3.title">Silk Road Heritage Scarf</h3>
+            <p class="product-card-desc" data-i18n="prod3.desc">
+              A luxurious silk scarf featuring the ancient maritime routes 
+              that connected the Muslim world to Korea — wearable history 
+              in gold and indigo.
+            </p>
+            <div class="product-card-footer">
+              <span class="product-card-tag" data-i18n="prod3.tag">✦ Heritage Wear</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NEWSLETTER / CTA SECTION
+       ============================================ -->
+  <section class="section-newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-content reveal">
+        <h2 data-i18n="newsletter.title">Join the Journey</h2>
+        <p data-i18n="newsletter.desc">
+          Receive weekly stories, historical discoveries, and cultural reflections 
+          connecting Islam and Korea — delivered with beauty and care.
+        </p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" data-i18n-placeholder="newsletter.placeholder" placeholder="your.email@example.com" required id="newsletter-email" aria-label="Email address">
+          <button type="submit" id="newsletter-submit" data-i18n="newsletter.submit">Subscribe</button>
+        </form>
+        <p class="newsletter-note">
+          <span class="arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</span>
+          <br><span data-i18n="newsletter.note">A project of ongoing charity — ṣadaqa jāriya · 사다까 자리야</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <div class="nav-logo-icon">回</div>
+            <div class="nav-logo-text">
+              Hui Hui Gwan
+              <span>회회관 · <span data-i18n="nav.subtitle">Islamic Korean Heritage</span></span>
+            </div>
+          </a>
+          <p data-i18n="footer.desc">
+            A humble endeavor to bring together writings, photographs, art, 
+            and cultural reflections on the shared heritage of Islam and Korea. 
+            Not something foreign — something woven into your own story.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" id="footer-instagram">📸</a>
+            <a href="#" aria-label="TikTok" id="footer-tiktok">🎬</a>
+            <a href="#" aria-label="Facebook" id="footer-facebook">📘</a>
+            <a href="#" aria-label="YouTube" id="footer-youtube">▶️</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.explore">Explore</h4>
+          <div class="footer-links">
+            <a href="#about" data-i18n="footer.aboutus">About Us</a>
+            <a href="#history" data-i18n="footer.historytl">History Timeline</a>
+            <a href="#stories" data-i18n="footer.storiesart">Stories & Articles</a>
+            <a href="#gallery" data-i18n="footer.visualgal">Visual Gallery</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.engage">Engage</h4>
+          <div class="footer-links">
+            <a href="#social" data-i18n="footer.socialcontent">Social Content</a>
+            <a href="#products" data-i18n="footer.heritageshop">Heritage Shop</a>
+            <a href="#newsletter" data-i18n="footer.newsletter">Newsletter</a>
+            <a href="#" data-i18n="footer.contribute">Contribute a Story</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 data-i18n="footer.resources">Resources</h4>
+          <div class="footer-links">
+            <a href="#" data-i18n="footer.research">Research & Sources</a>
+            <a href="#" data-i18n="footer.partner">Partner With Us</a>
+            <a href="#" data-i18n="footer.media">Media Kit</a>
+            <a href="#" data-i18n="footer.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">© 2026 Hui Hui Gwan 回回館 — All rights reserved</p>
+        <p class="sadaqa">صدقة جارية — 사다까 자리야</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
